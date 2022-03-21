@@ -27,7 +27,6 @@ class Student:
                 else:
                     with open("student_records.csv", 'a', newline='') as add_record:
                         record_student = csv.DictWriter(add_record, fieldnames=fieldnames)
-
                         record_student.writerow(
                             {"student_email": self.student_email, "student_name": self.student_name,
                              "gender": self.gender,
